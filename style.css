@@ -1,0 +1,121 @@
+:root {
+    --bg: #fff;
+    --mimic: rgba(0,0,0,0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+@font-face {
+    font-family: saxmono;
+    src: url(fonts/saxmono.ttf);
+}
+
+@font-face {
+    font-family: blok;
+    src: url(fonts/BLOKTYPE.TTF);
+}
+
+html {
+    font-family: saxmono;
+    background: var(--bg) linear-gradient(90deg, transparent 0, transparent 50px, var(--mimic) 50px, var(--mimic) 70px, transparent 70px, transparent 100%);
+}
+
+h1 {
+    font-size: 7rem;
+    font-family: blok;
+    text-transform: lowercase;
+}
+
+.preface {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 50px 0;
+    padding: 0 75px;
+
+    h1 {
+        color: var(--mimic);
+    }
+}
+
+section h1 {
+    font-size: 3rem;
+    font-family: saxmono;
+}
+
+section {
+    height: fit-content;
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    background: #fff;
+    border-radius: 0 3em 3em 0;
+    border: 2px solid var(--mimic);
+    border-left: 20px solid var(--mimic);
+    padding: 1rem 3rem;
+    margin-left: 50px;
+}
+
+section div.end {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    word-break: normal;
+    padding-top: 20px;
+
+    h1 {
+        align-self: flex-end;
+    }
+}
+
+section div.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.items > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+    max-width: max-content;
+    word-break: break-all;
+
+    * {
+        align-self: flex-end;
+    }
+    p {
+        width: 120px;
+        max-width: 120px;
+        padding-bottom: 20px;
+    }
+}
+
+.stationery img.pen {
+    display: inline-block;
+    height: 400px;
+    width: 40px;
+    max-width: 40px;
+    object-fit: cover;
+}
+
+/** images **/
+img.smallbox {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+img.r90d {
+    transform: rotate(90deg);
+}
