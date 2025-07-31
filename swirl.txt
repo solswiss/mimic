@@ -1,0 +1,43 @@
+ideen: 
+random item generator for each section; 
+email me for more info on anything; 
+best media;
+all the css/text features that i like, but haven't properly used;
+paracord;
+makeshift things, w/ guide;
+music rotation;
+foods (breakfast, cuisine, etc);
+
+scoops:
+features:
+
+features//3=scoops
+
+html footer
+link to another website [GITHUB REPO]
+special link (email), etc
+list <-- footer?
+404 PAGE [1]
+CUSTOM FONT [2]
+button
+pseudo class
+audio, audio controls, source src, then the text for when the audio don't show up
+COLOR SELECT [1]
+accordion (details, summary)
+progress bar
+input:list, datalist, option
+meter;min;max;low;high;optimum;value
+mark (highlight)
+
+for me
+datetime attr
+abbr;title
+time;datetime
+alt labels
+loading=lazy (for images)
+rel=noopener/noreferrer
+<base target=_blank> (in head)
+href ...?v=2 (force redownload of new versions)
+a href... download (attr)
+use .webp
+add font fallbacks <-- !!!

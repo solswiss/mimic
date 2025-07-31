@@ -1,6 +1,9 @@
 :root {
     --bg: #fff;
     --mimic: rgba(0,0,0,0.7);
+    --manic: #e55;
+    --mars: #e80;
+    --miffed: #5ad;
 }
 
 * {
@@ -35,6 +38,51 @@ h1 {
     text-transform: lowercase;
 }
 
+a {
+    color: var(--mars);
+}
+
+a:visited {
+    color: var(--miffed);
+}
+
+abbr {
+    font-style: italic;
+    color: var(--manic);
+}
+
+mark.noir {
+    background-color: #000;
+    color: #fdfdfd;
+}
+
+mark.black {
+    background-color: #000;
+}
+
+mark.white {
+    background-color: #fff;
+}
+
+mark.goldt {
+    color: gold;
+}
+
+.boldt {
+    font-weight: bold;
+}
+
+div#jump-top {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    transition: transform ease 180ms;
+
+    &:hover {
+        transform: rotate(-5deg);
+    }
+}
+
 .preface {
     height: fit-content;
     width: 100%;
@@ -47,9 +95,28 @@ h1 {
     }
 }
 
+div.title {
+    display: flex;
+    flex-direction: row;
+}
+
+input#title-color {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--mimic);
+    margin: 0;
+}
+
 section h1 {
     font-size: 3rem;
     font-family: saxmono;
+    font-weight: bold;
+    filter: blur(1px);
+
+    &::first-letter {
+        color: var(--manic);
+    }
 }
 
 section {
@@ -65,6 +132,93 @@ section {
     margin-left: 50px;
 }
 
+section div.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/** **** SECTION IMAGES **** **/
+div.items div.images {
+    counter-reset: images;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+div.images img {
+    counter-increment: images;
+}
+
+div.images > div {
+    position: relative;
+}
+
+.items div.images div.indc {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+
+    &::after {
+        display: block;
+        content: counter(images);
+        border: 1px solid var(--mimic);
+        border-radius: 50%;
+        text-align: center;
+        height: 16px;
+        width: 16px;
+        text-align: center;
+        line-height: 16px;
+        font-size: .9rem;
+        font-weight: normal;
+        background-color: var(--bg);
+    }
+}
+
+.stationery img.pen,
+img.pen {
+    display: inline-block;
+    height: 400px;
+    width: 60px;
+    max-width: 40px;
+    object-fit: cover;
+}
+
+/** **** END SECTION IMAGES **** **/
+
+div.addm {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.details {
+    counter-reset: details;
+}
+
+div.details p {
+    counter-increment: details;
+    display: inline;
+}
+
+div.details p::before {
+    content: counter(details);
+    margin-right: 5px;
+    border: 1px solid var(--mimic);
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+/** END (section information) **/
 section div.end {
     display: flex;
     flex-direction: column-reverse;
@@ -74,40 +228,53 @@ section div.end {
 
     h1 {
         align-self: flex-end;
+        pointer-events: none;
+        cursor: default;
+        user-select: none;
     }
 }
 
-section div.items {
+
+/** **** MECHS **** **/
+/** VENDOR **/
+.vendor {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    max-height: 400px;
+    min-height: 240px;
+    max-width: 30%;
+    min-width: 200px; /* image size */
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 1em;
+    border: 2px solid var(--mimic);
+
+    font-size: 0.8rem;
+    overflow-y: scroll;
 }
 
-div.items > div {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: fit-content;
-    max-width: max-content;
-    word-break: break-all;
-
-    * {
-        align-self: flex-end;
-    }
-    p {
-        width: 120px;
-        max-width: 120px;
-        padding-bottom: 20px;
-    }
+.vendor details div > * {
+    display: inline;
 }
 
-.stationery img.pen {
-    display: inline-block;
-    height: 400px;
-    width: 40px;
-    max-width: 40px;
-    object-fit: cover;
+.vendor-rand {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: var(--manic);
+    border-radius: 16px;
+    border: 2px solid var(--manic);
+    padding: 2px;
+    font-family: saxmono;
+
+    transition: filter linear 400ms;
 }
+
+.vendor-rand:hover {
+    filter: saturate(1.7);
+}
+/** **** END MECHS **** **/
 
 /** images **/
 img.smallbox {
