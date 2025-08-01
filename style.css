@@ -29,7 +29,7 @@ html, body {
 
 html {
     font-family: saxmono;
-    background: var(--bg) linear-gradient(90deg, transparent 0, transparent 50px, var(--mimic) 50px, var(--mimic) 70px, transparent 70px, transparent 100%);
+    background: var(--bg);
 }
 
 h1 {
@@ -84,6 +84,9 @@ div#jump-top {
 }
 
 .preface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: fit-content;
     width: 100%;
     text-align: center;
@@ -121,15 +124,43 @@ section h1 {
 
 section {
     height: fit-content;
-    width: 80%;
-    min-width: 80%;
-    max-width: 80%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 1000px;
     background: #fff;
     border-radius: 0 3em 3em 0;
     border: 2px solid var(--mimic);
-    border-left: 20px solid var(--mimic);
+    border-left: 2px solid var(--miffed);
     padding: 1rem 3rem;
-    margin-left: 50px;
+}
+
+.section-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-container::before,
+.section-container::after {
+    position: absolute;
+    left: -39px;
+    display: block;
+    content: "✸";
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    color: var(--miffed);
+    text-align: center;
+    line-height: 80px;
+    z-index: 2;
+}
+
+.section-container::before {
+    top: -40px;
+}
+
+.section-container::after {
+    bottom: -37px;
 }
 
 section div.items {
