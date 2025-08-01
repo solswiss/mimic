@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ze Mouth of a Mimic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="resources/taking-bass.gif" type="image/x-icon">
 </head>
@@ -17,8 +18,21 @@
             <input type="color" name="color" id="title-color">
         </p>
     </div>
+    <div style="display:none" class="mezlock-loc">
+        <div class="mezlock">
+            <div class="mezlock">
+                <div class="mezlock">
+                    <div class="mezlock"></div>
+                    <div>
+                        <div class="mezlock"></div>
+                        <div class="mezlock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section-container">
-        <section class="stationery" id="stationery">
+        <section class="catalogue-section stationery" id="stationery">
             <div class="items">
                 <div class="images">
                     <div><img style="object-position:39% 50%" src="https://www.tombow.com/files/2023/10/GRAYSCALE_MGL-807x1024.jpg" alt="" class="pen"></div>
@@ -33,6 +47,8 @@
                 <div class="addm">
                     <!-- the prototypical gacha vending machine, but the prizes are information -->
                     <div class="vendor" id="stationery-vendor">
+                        <div class="vglass" id="stationery-glass">
+                        </div>
                         <button class="vendor-rand" id="stationery-mech-get">STATIONERY, GET!</button>
                         <details id="stationery-mech">
                             <summary>Inventory</summary>
@@ -61,12 +77,86 @@
             </div>
         </section>
     </div>
+
+    <div class="section-container">
+        <section style="display:none" class="catalogue-section touch" id="touch">
+            <div class="items">
+                <div class="images">
+                    <div><img style="object-position:50% 50%;width:60px;max-width:60px;" src="https://www.dangoproducts.com/cdn/shop/files/cobra-weave-95-double-loop-lanyard-dangoproducts-16326054576212.jpg?v=1684438067" alt="" class="pen"></div>
+                    <div>
+                        <img style="max-height:150px;object-fit:contain;" src="https://i5.walmartimages.com/seo/1200-Pcs-Ocean-Blue-Glass-Gems-Pebbles-Mosaic-Tiles-Marble-Vase-Filler-Toy-12LB_129a2e56-20f2-450c-ad33-3af000e254bc.64d00b6140dd876f5dfa0113173ed785.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF" alt="">
+                        <img style="max-height:250px;max-width:auto;" src="https://products.checkers.co.za/medias/checkers515Wx515H-10117502EA-add.png?context=bWFzdGVyfGltYWdlc3wxMzgzMjV8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaDI5LzExMzcwMDQ2NDIzMDcwLnBuZ3w0OTc3OGY1NWJkYmEzNWM4MzQ4MzQwYWFlYWI4YzhmMGU1YTcxOTMwNDgyOGNlZTZlMGRiOGE4YzdhNDk0YzAz" alt=""></div>
+                        <div><img style="max-width: 300px;" src="https://www.meiji.com/global/food/common/img/chocolate/chocolate_11.jpg" alt="" class="r90d"></div>
+                </div>
+                <div class="addm">
+                    <!-- the prototypical gacha vending machine, but the prizes are information -->
+                    <div class="vendor" id="touch-vendor">
+                        <button class="vendor-rand" id="touch-mech-get">MAGIC TOUCH?</button>
+                        <details id="touch-mech">
+                            <summary>Inventory</summary>
+                        </details>
+                    </div>
+                    <div class="details">
+                        <p>Cobra weave. Very easy to pick up; great for paracord beginners! I used this to make a bracelet with a carabiner to hold keys.</p>
+                        <p>Glass pebbles and lantern. Not sure why I did this but putting colorful things that pass light on a light source makes for quite a nice centerpiece.</p>
+                        <p>Meiji Almond Chocolate. It's only natural to compartmentalize things, so naturally I store things in a very organized manner. What's this have to do with the item? Everything. Unlabeled storage is terrible. The solution <em>could</em> be to label things, or just use pre-existing pre-labeled containers like a lazy mimic. Truth be told I really like this method, but its application is limited by the containers you already have, so I can only explain so much!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <h1>touch</h1>
+                <p>Mmm isn't this fun?</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-container">
+        <section class="catalogue-section music" id="music">
+            <div class="items">
+                <div class="images">
+                    <div><img src="https://pbs.twimg.com/profile_images/1509372709465063431/afD_ybDx_400x400.jpg" alt="" class="artist"></div>
+                    <div><img src="https://f4.bcbits.com/img/a3327608778_16.jpg" alt="" class="album"></div>
+                    <div><img src="https://f4.bcbits.com/img/a0616445413_16.jpg" alt="" class="artist"></div>
+                    <div><img src="https://yt3.googleusercontent.com/LAm7gO9JU8LEj-ragMfqA5WVveGDRPafCQvOVzJI9Kr_mGAIYEqVS4KNff6SxobHoZgVehJt9VQ=s900-c-k-c0x00ffffff-no-rj" alt="" class="artist"></div>
+                    <div><img src="https://images.genius.com/fda3dc899419422829b24ed9848a11f8.1000x1000x1.png" alt="" class="artist"></div>
+                    <div><img src="https://f4.bcbits.com/img/a0550391936_16.jpg" alt="" class="album"></div>
+                    <div><img src="https://yt3.googleusercontent.com/FZwiQ01P3-qC2RROp9_c03RkPr3U-BPLoIrResalvm5AdcY8hLoMLtzYbnXJB54wSuQOuTeN=s900-c-k-c0x00ffffff-no-rj" alt="" class="artist"></div>
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Daft_Punk_in_2013_2-_centered.jpg" alt="" class="artist"></div>
+                </div>
+                <div class="addm">
+                    <!-- the prototypical gacha vending machine, but the prizes are information -->
+                    <div class="vendor" id="music-vendor">
+                        <div class="vglass" id="music-glass"></div>
+                        <button class="vendor-rand" id="music-mech-get">HEADPHONES ON!</button>
+                        <details id="music-mech">
+                            <summary>Inventory</summary>
+                        </details>
+                    </div>
+                    <div class="details">
+                        <p><span class="artist">CHANCE デラソウル (chancedelasoul)</span>. My favorite future funk & plunderphonics artist! <span class="album">Always Working On Something</span> is #1 in my heart!!! <span class="song"><a href="https://youtu.be/KnZR9m-RtSw?si=nK4HKPS6sQw2AgTm">Never See Me Again</a></span> and <span class="song"><a href="https://youtu.be/Mu3cAey1Ngw?si=JB-ukJD9vmE0YOKc">Those Days Are Gone</a></span> are really music for the (my) soul.</p>
+                        <p><span class="album" title="warning! may contain explicit material!"><a href="https://mimideath.bandcamp.com/album/effective-power-h">MIMIDEATH - effective. Power</a></span> This is mainly here due to two songs www. Can you guess which?</p>
+                        <p><span class="artist"><a href="https://patriciataxxon.bandcamp.com/">Patricia Taxxon</a></span> I just love her music, man... The albums I listen to most often should be <span class="album">Bicycle</span> and <span class="album">Gloria</span> (on display).</p>
+                        <p><span class="artist">AKUGETSU</span> A legend. I was immediately enamored by the sounds of Messiah Project and have been listening since then! If you like utaites, take a look. By the way, artists like Eve aren't included in this selection since your algorithms are sure to show you their work in due time.</p>
+                        <p><span class="artist">Sasuke Haraguchi</span> I'm not one to obsess so much that I consistently think about something, but <span class="song"><a href="https://youtu.be/_5jVOzFNieY?si=dqTMe1j4aYFBG_t9">For</a></span> might just be that one thing. It might be a dr*g... ww</p>
+                        <p><span class="album">Guillaume David - Warhammer 40,000: Mechanicus</span> <em>All hail the Omnissiah.</em></p>
+                        <p><span class="artist">AZALI</span> What great joy it has been to be blessed by such complex sound! Crazy how 99%&plusmn;1% of AZALI's discography aligns with my taste.</p>
+                        <p><span class="artist">Daft Punk</span> The French House duo that led me down a rabbithole both French and House and brought music that never dies. Goodnight, kings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <h1>music</h1>
+                <p>I'm no music expert. I do, however, know what music I enjoy! Be warned: my listening history has had people questioning my sanity (thanks, Airbuds) and changes on a whim. This is a selection of artists, albums, and songs logically ordered for your listening pleasure. And... no worries if you don't like this. My feelings will be fine... (sob) JK, I'd love to discuss music and hear all about why my taste is superior~</p>
+            </div>
+        </section>
+    </div>
     
     <!-- replace with image -->
     <a href="#top"><div id="jump-top">back to top</div></a>
 
+    <footer id="footer"></footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="data.json"></script>
     <script src="script.js"></script>
 </body>
 </html>

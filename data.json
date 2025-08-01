@@ -54,5 +54,77 @@
         "det":"Classic Crayola quality in a pretty black barrel. Only used on rare occasion and hold up well after many years. I believe these are the 'adult' markers but I'm not sure. Very easy to lose (since there are so many). Remember to swatch!",
         "origin":"Gifted."
     }
+],
+"touch":[
+    {
+        "name":"n/a",
+        "det":"n/a",
+        "origin":"n/a",
+        "link":"n/a"
+    }
+],
+"music":[
+    {
+        "name":"Furi OST",
+        "det":"Stumbled upon this gem and can't get enough of it. This album may have been a catalyst for my obsession with similar sound.",
+        "img":"https://f4.bcbits.com/img/a0723790634_16.jpg",
+        "link":"https://furi.bandcamp.com/album/furi-original-soundtrack"
+    },
+    {
+        "name":"Outer Wilds: Echoes of the Eye",
+        "det":"Found this after (while?) watching an Outer Wilds playthrough. Best listened to with your eyes closed and mind open.",
+        "img":"https://i.scdn.co/image/ab67616d0000b273db6b8ae97f69fee1d432334d",
+        "link":"https://andrewprahlow.bandcamp.com/album/outer-wilds-echoes-of-the-eye-the-lost-reels-deluxe-original-game-soundtrack-2"
+    },
+    {
+        "name":"Blue Prince OST",
+        "det":"Found this after watching a Blue Prince playthrough. It is downright evil how majestic this album's music is!!! I listened to this nonstop for days... What am I saying, that was definitely worthwhile.",
+        "img":"https://f4.bcbits.com/img/a1255331162_16.jpg",
+        "link":"https://triggandgusset.bandcamp.com/album/blue-prince-the-original-soundtrack"
+    },
+    {
+        "name":"Superliminal OST",
+        "det":"Unbelievably smooth vibes for a VDG. If you're down to mellow out, check it out! Clouds (Pause Menu) is my go-to track&mdash;yes, I like elevator music, and yes, I have a dedicated playlist!",
+        "img":"https://f4.bcbits.com/img/a4103252503_16.jpg",
+        "link":"https://mattchristensen.bandcamp.com/album/superliminal-original-game-soundtrack"
+    },
+    {
+        "name":"toe - グッドバイ (Goodbye)",
+        "det":"Breaches the confines of soul. Unites the mind and spirit. Just feel. Watch the music video on their channel if you connect with the music!",
+        "img":"https://i.scdn.co/image/ab67616d0000b2739580e0215dfbb43bd2d78b99",
+        "link":"https://toe-music.bandcamp.com/track/album-version"
+    },
+    {
+        "name":"SEATBELTS - Piano Black",
+        "det":"Composed, unruly sound, like the birdsong of a mechanical underground orchestra. Yeah, I'm not good with words so just go see what I mean ww!!!",
+        "img":"https://i.scdn.co/image/ab67616d0000b2739580e0215dfbb43bd2d78b99",
+        "link":"https://toe-music.bandcamp.com/track/album-version"
+    },
+    {
+        "name":"Cosmo Sheldrake",
+        "det":"What feels like rustic origins melted and molded into a mystical fable by artisanal hands. Analyzing and memorizing the lyrics to karaoke the songs is a grand old time.",
+        "img":"https://images.squarespace-cdn.com/content/v1/5710216c62cd94c2e912aad2/1708710148767-4VNSO1HPGVZHUS0T3QQK/The+Meadow_3-min.jpg?format=1500w"
+    },
+    {
+        "name":"A Bird's Last Look",
+        "det":"Brief but an instant classic. I really don't know what I'm talking about; have a listen if you're intrigued?",
+        "img":"https://i1.sndcdn.com/artworks-M95xY6YUKTEFtDxh-eHEzKg-t500x500.jpg",
+        "link":"https://www.youtube.com/watch?v=B_bYIWexH5Q"
+    },
+    {
+        "name":"Susumu Hirasawa Gats",
+        "det":"An obligatory addition.",
+        "img":"https://i.pinimg.com/originals/60/f8/16/60f816c2244fcda86c5916df9b43f92d.jpg"
+    },
+    {
+        "name":"Milkoi & Miraie - The Place You Promised To Show Me",
+        "det":"A resonant orchestral piece. You'll be seeing a lot of these kwk",
+        "img":"https://i1.sndcdn.com/artworks-000600503109-tr1daq-t500x500.jpg"
+    },
+    {
+        "name":"funnyflipper - pathetic dog christmas ornament",
+        "det":"Pathetic dogs always have a place on this website ww. Ok let's be serious, this is good stuff. Keep staring at the dog. Don't. Look. At. The. Dog. JK lol!!!",
+        "img":"https://f4.bcbits.com/img/a3108928478_10.jpg"
+    }
 ]
 }

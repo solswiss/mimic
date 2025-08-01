@@ -10,17 +10,65 @@ function press(data) {
     json_data = data;
 }
 
+// make it rain
+function mir(logue) {
+    // animation: post-rain 640ms ease forwards;
+    const vglass = document.getElementById(logue + "-glass");
+    vglass.classList.add('foggy');
+    const children = vglass.children;
+    for (let i = 0; i < children.length; i++) {
+        const an = children[i].animate(
+            [{
+                transform: 'translate(0,-100%)'
+            },
+            {
+                transform: 'translate(0,120%)'
+            }],
+            {
+                duration: 1000,
+                iterations: 1,
+                easing: 'ease',
+                fill: 'forwards',
+                delay: i*100,
+            }
+        )
+        if (i == children.length-1) 
+            an.onfinish = e => {vglass.classList.remove('foggy')};
+    }
+}
+
+
 document.getElementById('title-color').onchange = function(){
     $('.preface h1').css('color',this.value);
     console.log('you changed the title color to '+this.value);
 }
 
 document.addEventListener('DOMContentLoaded', e => {
+    $('#footer').load('footer.html');
+
     $('.items .images div').each(function(){
         let ind = document.createElement('div');
         ind.classList = 'indc';
         this.appendChild(ind);
     });
+
+    $('.vglass').each(function(){
+        const div1 = document.createElement('div');
+        div1.classList.add('post-rain');
+        const div2 = document.createElement('div');
+        div2.classList.add('post-rain');
+        const div3 = document.createElement('div');
+        div3.classList.add('post-rain');
+        const div4 = document.createElement('div');
+        div4.classList.add('post-rain');
+        const div5 = document.createElement('div');
+        div5.classList.add('post-rain');
+        this.appendChild(div1);
+        this.appendChild(div2);
+        this.appendChild(div3);
+        this.appendChild(div4);
+        this.appendChild(div5);
+    })
 
     $('.vendor button.vendor-rand').bind('click', e => {
         const id = e.target.id;
@@ -48,9 +96,10 @@ document.addEventListener('DOMContentLoaded', e => {
         const old_item = document.getElementById(logue+"-item");
         if (old_item) old_item.remove();
 
+        mir(logue);
         mech.appendChild(container);
         mech.open = true;
-        
+
         console.log(`you got the random ${logue} item ${name}`);
     });
 })

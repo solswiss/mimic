@@ -1,6 +1,6 @@
 ideen: 
-random item generator for each section; 
-email me for more info on anything; 
+c. random item generator for each section; 
+c. email me for more info on anything; 
 best media;
 all the css/text features that i like, but haven't properly used;
 paracord;
@@ -41,3 +41,7 @@ href ...?v=2 (force redownload of new versions)
 a href... download (attr)
 use .webp
 add font fallbacks <-- !!!
+
+ascii/pixel minimal winding staircase, vertical tileable
+fire beacons to light the way
+meet the maker (mimic), 梦(meng), or MongMong
