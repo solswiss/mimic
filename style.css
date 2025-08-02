@@ -59,7 +59,7 @@
     --mors: #170e22;
 }
 [gtheme="fantastic-planet"] {
-    --bg: #dfe5df;
+    --bg: #f2f5ef;
     --text: #333b8a;
     --mimic: #21132c55;
     --minmic: #21132c;
@@ -350,29 +350,30 @@ div.addm {
 
 div.details {
     counter-reset: details;
+}
 
-    .artist,
-    .album,
-    .song {
-        &::before {
-            content: "[";
-        }
-        &::after {
-            content: "]";
-        }
-    }
-    .artist {
-        color: var(--mars);
-    }
-    .album {
-        color: var(--mize);
-    }
-    .song {
-        color: var(--myrr);
-    }
+/** originally within div.details **/
+.artist,
+.album,
+.song {
     a {
         color: inherit;
     }
+    &::before {
+        content: "[";
+    }
+    &::after {
+        content: "]";
+    }
+}
+.artist {
+    color: var(--mars);
+}
+.album {
+    color: var(--mize);
+}
+.song {
+    color: var(--myrr);
 }
 
 div.details p {
@@ -426,7 +427,7 @@ section div.end {
     min-width: 200px; /* image size */
     flex: 1 1 0;
     padding: 5px;
-    border-radius: 1em;
+    border-radius: 15px;
     border: 2px solid var(--mimic);
 
     font-size: 0.8rem;
@@ -438,6 +439,15 @@ section div.end {
     background-position: 50% 50%;
 }
 
+.vendor:hover {
+    .vchaos {
+        backdrop-filter: grayscale(1);
+    }
+    .vended-item * {
+        mix-blend-mode: normal;
+    }
+}
+
 .vendor.closed {
     background-color: var(--mimic);
     color: #fffa;
@@ -445,6 +455,11 @@ section div.end {
     details {
         color: inherit;
     }
+}
+
+.vendor button:not(:disabled) {
+    z-index: 5;
+    cursor: pointer;
 }
 
 .vendor details {
@@ -512,6 +527,16 @@ div.post-rain {
         background-color: var(--miffed);
         animation-delay: 800ms;
     }
+}
+
+.vchaos {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: backdrop-filter 300ms ease;
 }
 
 .vendor details div > * {

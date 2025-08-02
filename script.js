@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', e => {
             title.href = link;
         } else title = document.createElement('span');
         title.classList.add('boldt');
-        title.textContent = name + " ";
+        title.textContent = name;
         let p = document.createElement('p');
-        p.innerHTML = det;
+        p.innerHTML = " " + det;
         if (logue == stationery) {
             p.textContent += " " + origin;
         } // make an array of sections that use optional attributes & contains to browse
