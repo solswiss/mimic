@@ -7,6 +7,7 @@ paracord;
 makeshift things, w/ guide;
 music rotation;
 foods (breakfast, cuisine, etc);
+wallpapers
 
 scoops:
 features:
@@ -45,3 +46,8 @@ add font fallbacks <-- !!!
 ascii/pixel minimal winding staircase, vertical tileable
 fire beacons to light the way
 meet the maker (mimic), 梦(meng), or MongMong
+add sfx for pointer elements (and toggle)
+enter page with all options (eg enable sfx)
+- WARNING: some text may be hard to read and change colors; website under construction;
+- SETTINGS
+- enable sfx

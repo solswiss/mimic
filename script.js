@@ -44,8 +44,6 @@ document.getElementById('title-color').onchange = function(){
 }
 
 document.addEventListener('DOMContentLoaded', e => {
-    $('#footer').load('footer.html');
-
     $('.items .images div').each(function(){
         let ind = document.createElement('div');
         ind.classList = 'indc';
@@ -77,6 +75,7 @@ document.addEventListener('DOMContentLoaded', e => {
         const name = item.name;
         const det = item.det;
         const origin = item.origin ? item.origin : 'Origin lost to time.';
+        const img = item.img;
         const link = item.link;
         let container = document.createElement('div');
         container.id = logue+"-item";
@@ -88,7 +87,15 @@ document.addEventListener('DOMContentLoaded', e => {
         title.classList.add('boldt');
         title.textContent = name + " ";
         let p = document.createElement('p');
-        p.textContent = det + " " + origin;
+        p.innerHTML = det;
+        if (logue == stationery) {
+            p.textContent += " " + origin;
+        } // make an array of sections that use optional attributes & contains to browse
+        const vendor = document.getElementById(logue+"-vendor");
+        if (img) {
+            $(vendor).css('background-image',`url(${img})`);
+        }
+        
         container.appendChild(title);
         container.appendChild(p);
 
@@ -97,8 +104,11 @@ document.addEventListener('DOMContentLoaded', e => {
         if (old_item) old_item.remove();
 
         mir(logue);
-        mech.appendChild(container);
-        mech.open = true;
+        setTimeout(e => {
+            container.classList.add('vended-item');
+            mech.appendChild(container);
+            mech.open = true;
+        }, 400);
 
         console.log(`you got the random ${logue} item ${name}`);
     });

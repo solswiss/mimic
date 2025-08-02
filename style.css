@@ -35,6 +35,7 @@ html, body {
 html {
     font-family: saxmono;
     background: var(--bg);
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -204,6 +205,11 @@ div.items div.images {
 
 div.images img {
     counter-increment: images;
+    transition: filter 240ms ease;
+
+    &:hover {
+        filter: hue-rotate(50deg);
+    }
 }
 
 div.images > div {
@@ -332,9 +338,9 @@ section div.end {
     justify-content: flex-start;
     max-height: 400px;
     min-height: 240px;
-    max-width: 30%;
+    max-width: 300px;
     min-width: 200px; /* image size */
-    flex-grow: 1;
+    flex: 1 1 0;
     padding: 5px;
     border-radius: 1em;
     border: 2px solid var(--mimic);
@@ -342,6 +348,10 @@ section div.end {
     font-size: 0.8rem;
     overflow: hidden;
     position: relative;
+    background-color: #fff;
+    background-repeat: none;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .vglass {
@@ -356,8 +366,7 @@ section div.end {
     top: 0;
     left: 0;
     pointer-events: none;
-    background-color: none;
-    z-index: 5;
+    background-color: unset;
 }
 
 .vglass.foggy {
@@ -424,8 +433,40 @@ div.post-rain {
     transition: filter linear 400ms;
 }
 
-.vendor-rand:hover {
+.vendor-rand:disabled {
+    background-color: var(--mimic);
+    border-color: var(--mimic);
+    color: var(--mimic);
+}
+
+.vendor-rand:not(:disabled):hover {
     filter: saturate(1.7);
+}
+
+.vended-item > * {
+    color: var(--manic);
+    mix-blend-mode: difference;
+    filter: contrast(1.5);
+    font-weight: bold;
+    animation: huey 5000ms linear infinite;
+}
+
+@keyframes huey {
+    0% {
+        color: var(--manic);
+    }
+    35% {
+        color: var(--melt);
+    }
+    60% {
+        color: var(--miffed);
+    }
+    85% {
+        color: var(--mora);
+    }
+    100% {
+        color: var(--manic);
+    }
 }
 
 /** **** END MECHS **** **/
