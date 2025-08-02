@@ -37,7 +37,6 @@ time;datetime
 alt labels
 loading=lazy (for images)
 rel=noopener/noreferrer
-<base target=_blank> (in head)
 href ...?v=2 (force redownload of new versions)
 a href... download (attr)
 use .webp
@@ -48,6 +47,6 @@ fire beacons to light the way
 meet the maker (mimic), 梦(meng), or MongMong
 add sfx for pointer elements (and toggle)
 enter page with all options (eg enable sfx)
-- WARNING: some text may be hard to read and change colors; website under construction;
+- WARNING: some text may be hard to read and change colors; website under construction; currently broken on mobile;
 - SETTINGS
 - enable sfx

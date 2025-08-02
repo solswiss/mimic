@@ -9,16 +9,53 @@
     <table>
         <tr>
             <th>catalogues</th>
-            <td><a href="#stationery">stationery<i class="fa-solid fa-pencil"></i></a></td></td>
-            <td><a href="#music">music<i class="fa-solid fa-music"></i></a></td>
-            <td><a href="#touch">touch<i class="fa-solid fa-fingerprint"></i></a></td>
+            <td><a href="#stationery" target="_self">stationery<i class="fa-solid fa-pencil"></i></a></td></td>
+            <td><a href="#music" target="_self">music<i class="fa-solid fa-music"></i></a></td>
+            <td><a href="#touch" target="_self">touch<i class="fa-solid fa-fingerprint"></i></a></td>
         </tr>
         <tr>
             <th>???</th>
-            <td><a href="tmo.html">The Making Of<i class="fa-solid fa-landmark"></i></a></td>
-            <td><a href="github.com/solswiss/mimic">Github Repository<i class="fa-solid fa-code"></i></a></td>
-            <td><a href="mailto:sunstingeer@gmail.com?subject=[MIMIC]%20Message">Talk to me<i style="transform:scaleX(-1)" class="fa-solid fa-dove"></i></a></td>
+            <td><a href="tmo.html" target="_self">The Making Of<i class="fa-solid fa-landmark"></i></a></td>
+            <td><a href="github.com/solswiss/mimic" target="_blank">Github Repository<i class="fa-solid fa-code"></i></a></td>
+            <td><a href="mailto:sunstingeer@gmail.com?subject=[MIMIC]%20Message" target="_self">Talk to me<i style="transform:scaleX(-1)" class="fa-solid fa-dove"></i></a></td>
+        </tr>
+        <tr>
+            <th>theme</th>
+            <td><div class="theme-selector" id="theme:light">light</div></td>
+            <td><div class="theme-selector" id="theme:dark">dark</div></td>
+            <td><div class="theme-selector" id="theme:cataclysm">cataclysm</div></td>
+            <td><div class="theme-selector" id="theme:fantastic-planet">fantastic planet</div></td>
         </tr>
     </table>
+
+    <script>
+        function setGTheme(selector_id) {
+            switch (selector_id) {
+                case 'theme:light':
+                    document.documentElement.setAttribute('gtheme', 'light');
+                    break;
+                case 'theme:dark':
+                    document.documentElement.setAttribute('gtheme', 'dark');
+                    break;
+                case 'theme:cataclysm':
+                    document.documentElement.setAttribute('gtheme', 'cataclysm');
+                    break;
+                case 'theme:fantastic-planet':
+                    document.documentElement.setAttribute('gtheme', 'fantastic-planet');
+                    break;
+                default: document.documentElement.setAttribute('gtheme', 'light');
+            }
+        }
+        const gtheme = localStorage.getItem('gtheme');
+        if (gtheme) {
+            setGTheme(gtheme);
+        }
+
+        $('.theme-selector').click(e => {
+            console.log('you changed the website theme');
+            localStorage.setItem('gtheme',e.target.id);
+            setGTheme(e.target.id);
+        });
+    </script>
 </body>
 </html>
