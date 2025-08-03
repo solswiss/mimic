@@ -54,7 +54,7 @@
         const gtheme = localStorage.getItem('gtheme');
         if (gtheme) {
             setGTheme(gtheme);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)')) {
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setGTheme('theme:dark');
         }
 
@@ -64,5 +64,6 @@
             setGTheme(e.target.id);
         });
     </script>
+    <script src="base.js"></script>
 </body>
 </html>

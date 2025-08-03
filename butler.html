@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ze Mansion Butler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/taking-bass.gif" type="image/x-icon">
+    <base target=_blank>
+</head>
+<body>
+    <div id="butler">
+        <div class="title">Gates</div>
+        <p>Welcome to Ze Mimic Mansion.</p>
+        <p>This region is currently under construction. Please mind your step.</p>
+        <div id="butler-menu">
+            <p><span>WARNING</span> some text may be hard to read and change colors frequently; not mobile responsive</p>
+            <p><span>SETTINGS</span> <button id="sfx-toggle">enable sfx</button></p>
+        </div>
+        <br>
+        <p><button id="enter-site">proceed</button></p>
+        <p>Age: <span id="site-age">0 years</span> | Last update: <span id="site-updd">2025.08.02</span></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="base.js"></script>
+    <script>
+        const site_birthday = new Date('2025-07-31');
+        let play_audio = false;
+
+        let daysSince = Math.floor((new Date()-site_birthday)/(1000*3600*24))
+        $('#site-age').text(daysSince + " days");
+        const nextLoc = sessionStorage.getItem('goTo');
+        $(document).ready(function() {
+            $('#enter-site').click(e => {
+                $('body').css('display','visible');
+                $('#butler').remove();
+                window.location.href = nextLoc ? nextLoc : 
+                    window.location.href.substring(0,window.location.href.lastIndexOf('/'))+'/index.html';
+                localStorage.setItem('newGuest', 'false');
+            });
+            $('#sfx-toggle').click(e => {
+                if (play_audio === true) {
+                    $('#sfx-toggle').css('background-color','#f57');
+                    play_audio = false;
+                } else {
+                    $('#sfx-toggle').css('background-color','#3fa');
+                    play_audio = true;
+                }
+                localStorage.setItem('play_audio',play_audio);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -568,9 +568,18 @@ div.post-rain {
     display: inline;
 }
 
+.vbuttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    > * {
+        flex: 1 0 0;
+    }
+}
+
 .vendor-rand {
     min-height: 30px;
-    min-width: 100px;
+    min-width: 30px;
     background-color: var(--manic);
     border-radius: 16px;
     border: 2px solid var(--manic);
@@ -705,6 +714,58 @@ img.r90d {
 
 div.theme-selector {
     cursor: pointer;
+}
+
+#butler {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    div {
+        max-width: 70%;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    button {
+        padding: 0 3px;
+        border-radius: 0;
+        border: 2px solid var(--mimic);
+        font-family: saxmono;
+        background-color: var(--bg);
+        cursor: pointer;
+        color: var(--text);
+        &:hover {
+            background-color: var(--mimic);
+            color: var(--manmic);
+        }
+    }
+}
+
+#butler-menu {
+    margin-top: 15px;
+    span {
+        font-weight: bold;
+        color: var(--manic);
+    }
+    button {
+        border: 2px solid var(--mimic);
+        background-color: var(--manic);
+        color: var(--minmic);
+        &:hover {
+            background-color: var(--mimic);
+            color: var(--manmic);
+        }
+    }
 }
 
 .mezlock {

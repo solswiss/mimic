@@ -10,6 +10,15 @@ function press(data) {
     json_data = data;
 }
 
+
+const vpress = new Audio('resources/Universified_notification14.mp3')
+let play_audio = JSON.parse(localStorage.getItem('play_audio'));
+if (play_audio === true) {
+    $('.vendor button.vendor-rand').click(e => {
+        vpress.play();
+    });
+}
+
 // make it rain
 function mir(logue) {
     // animation: post-rain 640ms ease forwards;

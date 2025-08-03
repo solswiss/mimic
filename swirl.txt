@@ -2,10 +2,10 @@ ideen:
 c. random item generator for each section; 
 c. email me for more info on anything; 
 best media;
-all the css/text features that i like, but haven't properly used;
+c. all the css/text features that i like, but haven't properly used;
 c. music rotation;
-foods (breakfast, cuisine, etc);
-wallpapers
+c. foods (breakfast, cuisine, etc);
+c. wallpapers
 this or that (forms: sandwich or burger; dates: slashes, dots, or dashes; big cat tongue or small cat tongue;)
 ---
 music
@@ -18,7 +18,7 @@ features:
 
 features//3=scoops
 
-html footer
+c. html footer
 c. link to another website [GITHUB REPO]
 c. special link (email), etc
 c. list
@@ -48,7 +48,4 @@ ascii/pixel minimal winding staircase, vertical tileable
 fire beacons to light the way
 meet the maker (mimic), 梦(meng), or MongMong
 add sfx for pointer elements (and toggle)
-enter page with all options (eg enable sfx)
-- WARNING: some text may be hard to read and change colors; website under construction; currently broken on mobile;
-- SETTINGS
-- enable sfx
+c. enter page with all options (eg enable sfx)
