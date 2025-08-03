@@ -36,11 +36,11 @@ c. mark (highlight)
 
 for me
 c. time;datetime
-alt labels
+c. alt labels
 c. loading=lazy (for images)
 rel=noopener/noreferrer
 href ...?v=2 (force redownload of new versions)
-a href... download (attr)
+c. a href... download (attr)
 use .webp
 add font fallbacks <-- !!!
 
