@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', e => {
         const origin = item.origin ? item.origin : 'Origin lost to time.';
         const img = item.img;
         const link = item.link;
+        const dlink = item.dlink;
         let container = document.createElement('div');
         container.id = logue+"-item";
         let title;
@@ -89,11 +90,20 @@ document.addEventListener('DOMContentLoaded', e => {
         let p = document.createElement('p');
         p.innerHTML = " " + det;
         if (logue == stationery) {
-            p.textContent += " " + origin;
+            p.innerHTML += " " + origin;
         } // make an array of sections that use optional attributes & contains to browse
         const vendor = document.getElementById(logue+"-vendor");
         if (img) {
             $(vendor).css('background-image',`url(${img})`);
+        } else {
+            $(vendor).css('background-image','unset');
+        }
+        if (dlink) {
+            const dlico = document.createElement('a');
+            dlico.innerHTML += ('<i class="fa-solid fa-file-arrow-down"></i>');
+            dlico.href = dlink;
+            dlico.setAttribute('download','');
+            container.append(dlico);
         }
         
         container.appendChild(title);

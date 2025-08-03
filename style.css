@@ -6,7 +6,7 @@
     --manic: #e55;
     --manmic: #fff;
     --mars: #e83;
-    --melt: #ed3;
+    --melt: #dc0;
     --mize: #4ca;
     --miffed: #5be;
     --myrr: #a6e;
@@ -21,12 +21,27 @@
     --manic: #e55;
     --manmic: #fff;
     --mars: #e83;
-    --melt: #ed3;
+    --melt: #dc0;
     --mize: #4ca;
     --miffed: #5be;
     --myrr: #a6e;
     --mora: #fcc;
     --mors: #f09;
+}
+[gtheme="mono-red"] {
+    --bg: #c90001;
+    --text: #fff;
+    --mimic: #fff5;
+    --minmic: #fff;
+    --manic: #f5cccc;
+    --manmic: #fff;
+    --mars: #f2aaaa;
+    --melt: #f09999;
+    --mize: #ef7777;
+    --miffed: #e56666;
+    --myrr: #fabbbb;
+    --mora: #ffcccc;
+    --mors: #ca0001;
 }
 [gtheme="dark"] {
     --bg: #000;
@@ -66,8 +81,8 @@
     --manic: #57b1bc;
     --manmic: #cef;
     --mars: #cfc897;
-    --melt: #7d6a56;
-    --mize: #aa8d44;
+    --melt: #aa8d44;
+    --mize: #7d6a56;
     --miffed: #9371d8;
     --myrr: #9d5644;
     --mora: #b4b2c3;
@@ -281,7 +296,7 @@ div.items div.images {
     gap: 5px;
     background-color: #fff;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
 }
 
 div.images img {
@@ -318,6 +333,8 @@ div.images > div {
         font-weight: normal;
         background-color: var(--manic);
         color: var(--manmic);
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -336,6 +353,14 @@ img.song {
     display: inline-block;
     height: 265px;
     width: 265px;
+    object-fit: cover;
+}
+
+/** plan to make this apply to all item images **/
+.wallpaper img.maxheight {
+    height: 256px;
+    max-height: 256px;
+    width: auto;
     object-fit: cover;
 }
 
@@ -370,10 +395,10 @@ div.details {
     color: var(--mars);
 }
 .album {
-    color: var(--mize);
+    color: var(--melt);
 }
 .song {
-    color: var(--myrr);
+    color: var(--manic);
 }
 
 div.details p {
@@ -619,7 +644,6 @@ div#timeweave {
     position: relative;
     min-height: 50px;
     padding: 2px 5px;
-    border: 2px solid var(--mimic);
     max-width: 47%;
 }
 
@@ -646,7 +670,7 @@ div#timeweave {
     align-self: flex-end;
 
     &::before {
-        left: calc(0px - 100% + 94% - 16px);
+        left: calc(0px - 100% + 94% - 14px);
         right: unset;
     }
 }
@@ -656,8 +680,13 @@ div#timeweave {
 
     &::before {
         left: unset;
-        right: calc(0px - 100% + 94% - 22px);
+        right: calc(0px - 100% + 94% - 20px);
     }
+}
+
+time {
+    border: 1px solid var(--text);
+    margin-right: 5px;
 }
 
 /** end timeline **/

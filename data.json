@@ -97,8 +97,7 @@
     {
         "name":"SEATBELTS - Piano Black",
         "det":"Composed, unruly sound, like the birdsong of a mechanical underground orchestra. Yeah, I'm not good with words so just go see what I mean ww!!!",
-        "img":"https://i.scdn.co/image/ab67616d0000b273e90a54d6e31d9ff3f1d566fa",
-        "link":"https://toe-music.bandcamp.com/track/album-version"
+        "img":"https://i.scdn.co/image/ab67616d0000b273e90a54d6e31d9ff3f1d566fa"
     },
     {
         "name":"Cosmo Sheldrake",
@@ -131,6 +130,68 @@
         "det":"Exactly as the website explains: dreamy, nostalgic, synthpop music with vocaloids. Sure, I have no clue what the lyrics mean, but the flow ridiculously addictive~ Also, visit the website&mdash;it's really cool!",
         "img":"https://f4.bcbits.com/img/0039610229_25.jpg",
         "link":"namitape.com"
+    },
+    {
+        "name":"Vincent Diamante",
+        "det":"Composer of majestic and airy music that breathes life into the likes of (the games) Sky:COTL and Flower.",
+        "img":"https://i.scdn.co/image/ab67616d0000b27369c8c8e1962a6b1c3ba5b722"
+    }
+],
+"wallpaper": [
+    {
+        "name":"Inspirobot - BYCBLASS",
+        "det":"[OFFENSIVE] Active volcano in the background with a moody atmosphere. Then you look up and see... <em>that.</em>",
+        "origin":"u/AlienSilver",
+        "img":"https://files.catbox.moe/siraoj.png",
+        "dlink":"https://files.catbox.moe/siraoj.png"
+    },
+    {
+        "name":"Inspirobot - EIAS",
+        "det":"[OFFENSIVE] Abstract geometry (specifically triangles). I'd consider it colorful contemporary with slightly playful text.",
+        "origin":"u/shadow2087",
+        "img":"https://files.catbox.moe/et4k8v.png",
+        "dlink":"https://files.catbox.moe/et4k8v.png"
+    },
+    {
+        "name":"Inspirobot - SHMCYH",
+        "det":"[OFFENSIVE] Sleek red and black abstract geometry with a four-pointed star as its focal point. Well, that would be the case if not for the unavoidable question front and center. I especially like the text variation in this :)",
+        "origin":"u/That_Put5350",
+        "img":"https://files.catbox.moe/oglvkn.png",
+        "dlink":"https://files.catbox.moe/oglvkn.png"
+    },
+    {
+        "name":"Inspirobot - YAAPB",
+        "det":"[NOT REALLY OFFENSIVE] Classic gorgeous outlook at a purple and peach sky from a plane. The bold red on the wing really adds some life to this... as does the easily overlooked text ww.",
+        "origin":"u/ogtatertot",
+        "img":"https://files.catbox.moe/6bo1re.png",
+        "dlink":"https://files.catbox.moe/6bo1re.png"
+    },
+    {
+        "name":"Inspirobot - YAAAC",
+        "det":"[NOT REALLY OFFENSIVE] Super clean blue and red gradation over a black backdrop. The very silly text ties it all together.",
+        "origin":"u/Joybgamer",
+        "img":"https://files.catbox.moe/13b7em.png",
+        "dlink":"https://files.catbox.moe/13b7em.png"
+    },
+    {
+        "name":"Wessex Poems and Other Verses - Page 49",
+        "det":"Grayscale illustation of a landscape with an incredible composition. Obscure finds are the best~",
+        "origin":"Thomas Hardy",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/b/b8/Wessex_Poems_and_Other_Verses_-_Page_49.png"
+    },
+    {
+        "name":"James Crowe Richmond",
+        "det":"Landscapes in watercolor. New Zealand nature focus.",
+        "img":"https://reprodukcijos.lt/48371-large_default/reproduction-of-grey-river-on-the-beach-1862.jpg"
+    },
+    {
+        "name":"MS Paint / hand-drawn",
+        "det":"I found this to be a good time, but understand that I <em>like</em> MS Paint.... and Comic Sans. The messier the result, the better!"
+    },
+    {
+        "name":"Mu Pan",
+        "det":"Intensely violent and overflowing with kinetic energy. At least, that's how I see his work... I'm bad with words ww. Large epic paintings, China mythos focus.",
+        "img":"https://www.gallerypoulsen.com/Content/1399455.jpg?w=2048"
     }
 ]
 }

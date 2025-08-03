@@ -8,21 +8,23 @@
 <body>
     <table>
         <tr>
-            <th>catalogues</th>
-            <td><a href="#stationery" target="_self">stationery<i class="fa-solid fa-pencil"></i></a></td></td>
-            <td><a href="#music" target="_self">music<i class="fa-solid fa-music"></i></a></td>
-            <td><a href="#touch" target="_self">touch<i class="fa-solid fa-fingerprint"></i></a></td>
+            <th><a href="index.html">catalogue</a></th>
+            <td><a href="index.html#stationery" target="_self">stationery<i class="fa-solid fa-pencil"></i></a></td></td>
+            <td><a href="index.html#music" target="_self">music<i class="fa-solid fa-music"></i></a></td>
+            <td><a href="index.html#touch" target="_self">touch<i class="fa-solid fa-fingerprint"></i></a></td>
+            <td><a href="index.html#wallpaper" target="_self">wallpaper<i class="fa-solid fa-paint-roller"></i></a></td>
         </tr>
         <tr>
-            <th>???</th>
+            <th>meta</th>
             <td><a href="tmo.html" target="_self">The Making Of<i class="fa-solid fa-landmark"></i></a></td>
-            <td><a href="github.com/solswiss/mimic" target="_blank">Github Repository<i class="fa-solid fa-code"></i></a></td>
+            <td><a href="https://github.com/solswiss/mimic" target="_blank">Github Repo<i class="fa-solid fa-code"></i></a></td>
             <td><a href="mailto:sunstingeer@gmail.com?subject=[MIMIC]%20Message" target="_self">Talk to me<i style="transform:scaleX(-1)" class="fa-solid fa-dove"></i></a></td>
         </tr>
         <tr>
-            <th>theme</th>
+            <th>themes</th>
             <td><div class="theme-selector" id="theme:light">light</div></td>
             <td><div class="theme-selector" id="theme:dark">dark</div></td>
+            <td><div class="theme-selector" id="theme:mono-red">mono red</div></td>
             <td><div class="theme-selector" id="theme:cataclysm">cataclysm</div></td>
             <td><div class="theme-selector" id="theme:fantastic-planet">fantastic planet</div></td>
         </tr>
@@ -37,6 +39,9 @@
                 case 'theme:dark':
                     document.documentElement.setAttribute('gtheme', 'dark');
                     break;
+                case 'theme:mono-red':
+                    document.documentElement.setAttribute('gtheme', 'mono-red');
+                    break;
                 case 'theme:cataclysm':
                     document.documentElement.setAttribute('gtheme', 'cataclysm');
                     break;
@@ -49,6 +54,8 @@
         const gtheme = localStorage.getItem('gtheme');
         if (gtheme) {
             setGTheme(gtheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)')) {
+            setGTheme('theme:dark');
         }
 
         $('.theme-selector').click(e => {
