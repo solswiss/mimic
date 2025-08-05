@@ -12,6 +12,7 @@
     --myrr: #a6e;
     --mora: #fcc;
     --mors: #f09;
+    --border-radius: 15px;
 }
 [gtheme="light"] {
     --bg: #fff;
@@ -137,15 +138,41 @@ footer {
     margin-top: 50px;
     text-transform: capitalize;
 
+    .themes td,
+    .settings td {
+        &:hover {
+            background-color: var(--mimic);
+            color: var(--manmic);
+        }
+        &:active {
+            background-color: var(--manic);
+            color: var(--manmic);
+        }
+    }
     th, td {
-        border: 1px solid var(--mimic);
-        padding: 2px 5px;
+        border: transparent;
         text-align: start;
+        padding: 3px 7px;
+    }
+    th {
+        background-color: var(--manic);
+        color: var(--manmic);
+        padding-left: 10px;
+        a, a:visited {
+            color: var(--manmic);
+        }
+    }
+    td {
+        min-width: 18ch;
     }
 
     table {
         padding: 0;
-        border-collapse: collapse;
+        margin: 0 auto;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-radius: var(--border-radius);
+        overflow: hidden;
     }
 
     i {
@@ -275,6 +302,7 @@ section.catalogue-section {
 .section-container {
     position: relative;
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -285,18 +313,41 @@ section.catalogue-section div.items {
 }
 
 /** **** SECTION IMAGES **** **/
-div.items div.images {
+div.images {
+    --img-min-width: 160px;
     counter-reset: images;
+    display: grid;
+    grid: repeat(auto-fit, minmax(0,1fr)) / repeat(auto-fit, minmax(var(--img-min-width),1fr));
+    min-width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 15px;
+}
+
+.stationery div.images {
+    --img-min-width: 40px;
+}
+.wallpaper div.images {
+    --img-min-width: 250px;
+    --img-max-height: 200px;
+    grid: repeat(auto-fit, minmax(0,1fr)) / repeat(auto-fit, minmax(var(--img-min-width),1fr));
+}
+.stationery div.images {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    min-width: 100%;
-    gap: 5px;
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 15px;
+    > div {
+        height: unset;
+        width: unset;
+    }
+}
+.wallpaper div.images {
+    > div {
+        height: var(--img-max-height);
+        width: auto;
+    }
 }
 
 div.images img {
@@ -312,6 +363,8 @@ div.images > div {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .items div.images div.indc {
@@ -351,15 +404,16 @@ img.pen {
 img.album,
 img.song {
     display: inline-block;
-    height: 265px;
-    width: 265px;
+    min-height: var(--img-min-width);
+    min-width: var(--img-min-width);
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
-/** plan to make this apply to all item images **/
 .wallpaper img.maxheight {
-    height: 256px;
-    max-height: 256px;
+    height: var(--img-max-height, 200px);
+    max-height: var(--img-max-height, 200px);
     width: auto;
     object-fit: cover;
 }
@@ -452,7 +506,7 @@ section div.end {
     min-width: 200px; /* image size */
     flex: 1 1 0;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--mimic);
 
     font-size: 0.8rem;
@@ -557,7 +611,7 @@ div.post-rain {
 .vchaos {
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     position: absolute;
     top: 0;
     left: 0;
@@ -712,8 +766,9 @@ img.r90d {
 }
 /** end images **/
 
-div.theme-selector {
-    cursor: pointer;
+footer .themes,
+footer .settings {
+    cursor: default;
 }
 
 #butler {

@@ -11,13 +11,10 @@ function press(data) {
 }
 
 
-const vpress = new Audio('resources/Universified_notification14.mp3')
+// vending machine button press
+const vpress = new Audio('resources/Universified_notification14.mp3');
 let play_audio = JSON.parse(localStorage.getItem('play_audio'));
-if (play_audio === true) {
-    $('.vendor button.vendor-rand').click(e => {
-        vpress.play();
-    });
-}
+
 
 // make it rain
 function mir(logue) {
@@ -78,6 +75,9 @@ document.addEventListener('DOMContentLoaded', e => {
     })
 
     $('.vendor button.vendor-rand').bind('click', e => {
+        play_audio = JSON.parse(localStorage.getItem('play_audio'));
+        if (play_audio) vpress.play();
+
         const id = e.target.id;
         const logue = id.substring(0,id.indexOf('-'));
         const item = json_data[logue][Math.floor(Math.random()*json_data[logue].length)];

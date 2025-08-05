@@ -20,13 +20,17 @@
             <td><a href="https://github.com/solswiss/mimic" target="_blank">Github Repo<i class="fa-solid fa-code"></i></a></td>
             <td><a href="mailto:sunstingeer@gmail.com?subject=[MIMIC]%20Message" target="_self">Talk to me<i style="transform:scaleX(-1)" class="fa-solid fa-dove"></i></a></td>
         </tr>
-        <tr>
+        <tr class="themes">
             <th>themes</th>
             <td><div class="theme-selector" id="theme:light">light</div></td>
             <td><div class="theme-selector" id="theme:dark">dark</div></td>
             <td><div class="theme-selector" id="theme:mono-red">mono red</div></td>
             <td><div class="theme-selector" id="theme:cataclysm">cataclysm</div></td>
             <td><div class="theme-selector" id="theme:fantastic-planet">fantastic planet</div></td>
+        </tr>
+        <tr class="settings">
+            <th>settings</th>
+            <td><span id="sound-toggle"></span></td>
         </tr>
     </table>
 
@@ -63,6 +67,24 @@
             localStorage.setItem('gtheme',e.target.id);
             setGTheme(e.target.id);
         });
+
+        const sound = localStorage.getItem('play_audio');
+        if (sound && JSON.parse(sound)) {
+            $('#sound-toggle').text('disable sound');
+        } else {
+            $('#sound-toggle').text('enable sound');
+        }
+        $('#sound-toggle').click(e=>{
+            if (JSON.parse(localStorage.getItem('play_audio'))) {
+                // disable sound
+                localStorage.setItem('play_audio','false');
+                $('#sound-toggle').text('enable sound');
+            } else {
+                // enable sound
+                localStorage.setItem('play_audio','true');
+                $('#sound-toggle').text('disable sound');
+            }
+        })
     </script>
     <script src="base.js"></script>
 </body>
