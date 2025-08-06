@@ -1,51 +1,23 @@
 ideen: 
-c. random item generator for each section; 
-c. email me for more info on anything; 
 best media;
-c. all the css/text features that i like, but haven't properly used;
-c. music rotation;
-c. foods (breakfast, cuisine, etc);
-c. wallpapers
 this or that (forms: sandwich or burger; dates: slashes, dots, or dashes; big cat tongue or small cat tongue;)
 ---
+eats
 music
 stationery
-touch
 wallpapers
 
-scoops:
-features:
 
-features//3=scoops
-
-c. html footer
-c. link to another website [GITHUB REPO]
-c. special link (email), etc
-c. list
-c. 404 PAGE [1]
-c. CUSTOM FONT [2]
-c. button
-c. pseudo class
-audio, audio controls, source src, then the text for when the audio don't show up
-c. COLOR SELECT [1]
-c. accordion (details, summary)
 progress bar
 input:list, datalist, option
 meter;min;max;low;high;optimum;value
-c. mark (highlight)
 
 for me
-c. time;datetime
-c. alt labels
-c. loading=lazy (for images)
-rel=noopener/noreferrer
 href ...?v=2 (force redownload of new versions)
 c. a href... download (attr)
 use .webp
-add font fallbacks <-- !!!
 
 ascii/pixel minimal winding staircase, vertical tileable
 fire beacons to light the way
 meet the maker (mimic), 梦(meng), or MongMong
 add sfx for pointer elements (and toggle)
-c. enter page with all options (eg enable sfx)

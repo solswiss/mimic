@@ -55,14 +55,6 @@
         "origin":"Gifted."
     }
 ],
-"touch":[
-    {
-        "name":"n/a",
-        "det":"n/a",
-        "origin":"n/a",
-        "link":"n/a"
-    }
-],
 "music":[
     {
         "name":"Furi OST",
@@ -111,7 +103,7 @@
         "link":"https://www.youtube.com/watch?v=B_bYIWexH5Q"
     },
     {
-        "name":"Susumu Hirasawa Gats",
+        "name":"Susumu Hirasawa - Gats",
         "det":"An obligatory addition.",
         "img":"https://i.pinimg.com/originals/60/f8/16/60f816c2244fcda86c5916df9b43f92d.jpg"
     },
@@ -155,6 +147,23 @@
         "name":"Max Duggan",
         "det":"Colorful, airy and beautiful melodies. I recommend Reflections of Mini Metro (mostly because that's how I found this artist... and I listen to this album the most)!",
         "img":"https://i.scdn.co/image/ab67616d00001e0204ce05b99853a28ae98bd800"
+    },
+    {
+        "name":"Paradis - Garden Le Pour Toi",
+        "det":"You know when you can't help but dance? The vibes are good with this one.",
+        "img":"https://images.genius.com/15dbdcfc211224a4f90203837a0064b6.1000x1000x1.jpg",
+        "link":"https://soundcloud.com/paradisfm/garde-le-pour-toi"
+    },
+    {
+        "name":"The Beatles - Hey Jude",
+        "det":"Legendary song with incredible karaoke potential. ...Don't look at me like that, I told you I'm not a music expert!!",
+        "img":"https://www.shinko-music.co.jp/wp-content/uploads/images/15451-7.jpg"
+    },
+    {
+        "name":"Alexandre Desplat - The French Dispatch",
+        "det":"I was so enamored with this album on my first go-through that I listened to almost half Desplat's discography, but I haven't listened to all the Wes Anderson scores yet!",
+        "img":"https://m.media-amazon.com/images/I/812TjdJ1ZVL._UF894,1000_QL80_.jpg",
+        "link":"https://open.spotify.com/album/5c7wx5wrravz5c8JcRp0G6"
     }
 ],
 "wallpaper": [
@@ -212,6 +221,153 @@
         "name":"Mu Pan",
         "det":"Intensely violent and overflowing with kinetic energy. At least, that's how I see his work... I'm bad with words ww. Large epic paintings, China mythos focus.",
         "img":"https://www.gallerypoulsen.com/Content/1399455.jpg?w=2048"
+    },
+    {
+        "name":"Caspar David Friedrich - Wanderer above the Sea of Fog",
+        "det":"Powerful composition and color contrast. Considered the visual face of The Sublime for a reason~",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg/330px-Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
+    },
+    {
+        "name":"Albert Bierstadt A Storm in the Rocky Mountains (collection)",
+        "det":"Views from the heart of the Rocky Mountains with a mature tone, as if, say, a storm were brewing.",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Rocky_Mountains%2C_Lander%27s_Peak_%28Albert_Bierstadt%29%2C_1863_%28oil_on_linen_-_scan%29.jpg/250px-The_Rocky_Mountains%2C_Lander%27s_Peak_%28Albert_Bierstadt%29%2C_1863_%28oil_on_linen_-_scan%29.jpg"
+    }
+],
+"eats": [
+    {
+        "name":"Tangyuan",
+        "det":"Delicate rice balls with filling (sesame paste by default)&mdash;an auspicious classic. Try it with black sesame seed soup!",
+        "img":"https://takestwoeggs.com/wp-content/uploads/2024/02/Tang-yuan-Glutinous-Rice-Ball-Takestwoeggs-6.jpg"
+    },
+    {
+        "name":"Steamed Eggs",
+        "det":"Super soft, melts-in-the-mouth formula that can be perfected with just a few additions. Personally, I enjoy the base flavor~",
+        "img":"https://thewoksoflife.com/wp-content/uploads/2024/06/steamed-egg-10.jpg"
+    },
+    {
+        "name":"Mixed Texture Noodles",
+        "det":"Specifically wavy ramen and straight rice noodles due to their unique qualities! The textures really make a difference. Also, this may or may not be an innuendo :9"
+    },
+    {
+        "name":"Udon",
+        "det":"Some noodles have the ability to revive a soul. Sure, I'm exaggerating, but I think udon could cure a hangover easy.",
+        "img":"https://www.justonecookbook.com/wp-content/uploads/2024/03/Kake-Udon-7541-II.jpg"
+    },
+    {
+        "name":"Acai Juice",
+        "det":"This stuff is so good I portion my drinking amounts (yes, just juice, nothing else) such that one bottle lasts me a month. After all, good things shouldn't be taken for granted!"
+    },
+    {
+        "name":"Ice",
+        "det":"Great to chew on. Ice/Ice."
+    },
+    {
+        "name":"Parfait",
+        "det":"All forms of parfait are mouth-watering; even the ones that are still partially frozen make my mouth sing!",
+        "img":"https://madaboutfood.co/wp-content/uploads/2024/01/Chocolate-parfait-15-683x1024.jpg"
+    },
+    {
+        "name":"Pomegranate",
+        "det":"Deceptively easy to eat and also stunning to look at.",
+        "img":"https://dosedaily.co/cdn/shop/articles/Pomegranate_1200x630.webp?v=1743100809"
+    },
+    {
+        "name":"Fish",
+        "det":"I lean towards the seafood-fiend side of food personalities thus naturally I find fish (no sides) delicious! Best eaten lightly cooked!"
+    },
+    {
+        "name":"Oranges",
+        "det":"Like watermelons it's difficult to find a good orange but it's a very worthwhile venture for those who like citrus."
+    },
+    {
+        "name":"Pretzels",
+        "det":"Tasty whether soft-baked or in snack form! Honestly if I had the time I'd probably have a soft-baked pretzel at every offering establishment I visit.",
+        "img":"https://cdnimg.webstaurantstore.com/images/products/large/516007/1910098.jpg"
+    },
+    {
+        "name":"Smart Food White Cheddar Popcorn",
+        "det":"My dislike for popcorn and fondness of white cheddar comes together in a very inconsequential matrimony through this. Yeah, it's pretty good.",
+        "img":"https://www.emmaspopcorn.com/wp-content/uploads/2019/08/rsz_sweet_white_cheddar.jpg"
+    },
+    {
+        "name":"Tater Tots and Hash Browns",
+        "det":"So I couldn't decide between the two ultimate potato foodstuffs since they're both amazing, so what???!?!!?",
+        "img":"https://cookerybase.com/wp-content/uploads/2023/03/hash-browns-vs-tater-tots-1024x576.jpg.webp"
+    },
+    {
+        "name":"Brownies",
+        "det":"Classic dessert I would hate to turn down. Like many things, tastes better with a homemade touch~",
+        "img":"https://cdn.loveandlemons.com/wp-content/uploads/2020/01/brownie-recipe.jpg"
+    },
+    {
+        "name":"Cornbread",
+        "det":"I find it ridiculous that something as good as cornbread is so overlooked and then I remember it's bread. Trust me though, it is <em>good</em>.",
+        "img":"https://www.allrecipes.com/thmb/on5WMWrlpoNhAkjzDIKP7MZ866M=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/76594-grandmothers-buttermilk-cornbread-beauty-3x4-0135064414801604-dd84dcaf1d0f421eb3b6fdced8cf0ad3.jpg"
+    },
+    {
+        "name":"Cold/Green Salad",
+        "det":"The more one-note the meat, the better. Man, if salads weren't so expensive things would be very different&mdash;I can say that since I've tried making salads at home.",
+        "img":"https://www.vibrantplate.com/wp-content/uploads/2018/12/Salad-08-720x720.jpg"
+    },
+    {
+        "name":"Applesauce",
+        "det":"Say what you will but at least I'm true to my tastes..."
+    },
+    {
+        "name":"Baked Beans",
+        "det":"So tasty but so, so calorie dense :("
+    },
+    {
+        "name":"Broccoli Cheddar Soup",
+        "det":"All soup is good soup! I just happen to like this one a little more.",
+        "img":"https://www.the-girl-who-ate-everything.com/wp-content/uploads/2015/09/panera-broccoli-soup-4.jpg"
+    },
+    {
+        "name":"Chinese Bakery Pastries",
+        "det":"You know the ones. If you don't, goodness you're missing out! Those bakery goods are delectable~"
+    },
+    {
+        "name":"Bean Sprouts",
+        "det":"Work with every dish and have the same effect as sunflower seeds (to me at least)."
+    },
+    {
+        "name":"Corn",
+        "det":"Classic food that complements most dishes. Personally hard to come by thus it's even more valuable!!"
+    },
+    {
+        "name":"Ice Breakers",
+        "det":"Dunno, just really like the flavors. The Duo mints are really nice too.",
+        "img":"https://www.candywarehouse.com/cdn/shop/files/ice-breakers-ice-cubes-peppermint-gum-4-piece-box-candy-warehouse-1.jpg?v=1736578161"
+    },
+    {
+        "name":"Dry Ramen",
+        "det":"Either uncooked ramen or purpose-made dry ramen snacks. Both are good!"
+    },
+    {
+        "name":"Pringles",
+        "det":"Probably the best chips out there. Also, tall cans >>>"
+    },
+    {
+        "name":"Saltines",
+        "det":"Not flavor heavy and that's why I like 'em... No, saltines are actually delicious. I could eat saltines forever."
+    },
+    {
+        "name":"Macaroni n' Cheese",
+        "det":"Mmm.",
+        "img":"https://schoolnightvegan.com/wp-content/uploads/2021/04/vegan-mac-and-cheese-instant-mix.png"
+    },
+    {
+        "name":"Stacy's Pita Chips",
+        "det":"I usually have these without hummus only because I normally don't have hummus stocked. Still good chips!"
+    },
+    {
+        "name":"Thin Mints and Thin Mints Bites",
+        "det":"I'm a sucker for mint chocolate (FYI my go-to ice cream flavor is mint choco) and these are evil they're so good!!!",
+        "img":"https://sugaredandstirred.com/wp-content/uploads/2023/03/thin-mint-cookies-3-735x978.jpg"
+    },
+    {
+        "name":"Dill Pickles",
+        "det":"Paired with the occasional sub. Perhaps the best part of ordering a sub is having friends that offer their pickles."
     }
 ]
 }

@@ -45,6 +45,7 @@ function mir(logue) {
 
 
 document.getElementById('title-color').onchange = function(){
+    $('.preface h1').css('animation','none');
     $('.preface h1').css('color',this.value);
     console.log('you changed the title color to '+this.value);
 }
@@ -97,7 +98,7 @@ document.addEventListener('DOMContentLoaded', e => {
         title.classList.add('boldt');
         title.textContent = name;
         let p = document.createElement('p');
-        p.innerHTML = " " + det;
+        p.innerHTML = " ✦ " + det;
         if (logue == stationery) {
             p.innerHTML += " " + origin;
         } // make an array of sections that use optional attributes & contains to browse
