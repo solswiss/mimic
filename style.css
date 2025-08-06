@@ -159,7 +159,7 @@ footer {
         }
     }
     .themes > div,
-    .settings > * {
+    .settings > div {
         &:hover {
             background-color: var(--mimic);
             color: var(--manmic);
@@ -967,6 +967,11 @@ footer .settings {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    #gsign {
+        visibility: hidden;
+    }
+}
 @media only screen and (max-width: 992px) {
     body {
         font-size: 1.4rem;
@@ -1013,9 +1018,6 @@ footer .settings {
     }
     div.details {
         font-size: 1.4rem;
-    }
-    #gsign {
-        visibility: hidden;
     }
     div#timeweave {
         width: 16px;
